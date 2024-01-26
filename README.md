@@ -24,14 +24,18 @@ This project shares a set of classes to execute PHP from 4D by using an external
 
 ## Install
 
-Get PHP from the offical site for Windows[^phpforwindows] or from my repository[^phpformac] for macOS. Alternatively, compile PHP from source. Place PHP and/or PHP-CGI in /RESOURCES/bin/{platform}.
+Get PHP from the offical site for Windows[^phpforwindows] or from my repository[^phpformac] for macOS. Alternatively, compile PHP from source. Place PHP and/or PHP-CGI at the following path:
 
+```path
+/RESOURCES/bin/{platform}
+```
 
 ## Examples
 
 ### Execute
 
 ```4d
+$ini:=File("/RESOURCES/php/php.ini")
 $PHP:=cs.PHP.new(cs._PHP_Controller; $ini)
 $PHP.run($input)
 //the data is returned synchronously
@@ -41,6 +45,7 @@ $stdOut:=$PHP.data
 ### Interactive
 
 ```4d
+$ini:=File("/RESOURCES/php/php.ini")
 $PHP:=cs.PHP.new(cs._PHP_Controller; $ini)
 $PHP.interactive()
 //you can now post messages and receive data asynchronously
