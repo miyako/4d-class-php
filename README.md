@@ -4,7 +4,7 @@
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-class-php/total)
 
 # 4d-class-php
-Class to use external PHP interpreter in execute, interactive or CGI mode
+Classes to use external PHP interpreter in execute, interactive or CGI mode
 
 ## Introduction
 
