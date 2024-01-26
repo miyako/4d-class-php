@@ -29,7 +29,7 @@ This project shares a set of classes to execute PHP from 4D by using an external
 Get PHP from the offical site for Windows[^phpforwindows] or from my repository[^phpformac] for macOS. Alternatively, compile PHP from source. Place PHP and/or PHP-CGI at the following path:
 
 ```path
-/RESOURCES/bin/{platform}
+/RESOURCES/bin/{platform}/
 ```
 
 ## Examples
