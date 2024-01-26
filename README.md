@@ -6,6 +6,8 @@
 # 4d-class-php
 Classes to use external PHP interpreter in execute, interactive or CGI mode
 
+![](https://github.com/miyako/4d-class-php/assets/1725068/d470dc30-004f-4b8a-9812-32555bcd2a23)
+
 ## Introduction
 
 The internal PHP Interpreter has been removed in v20 R3[^removed]. Now it is "strongly advised" to use `4D.SystemWoker` to execute PHP code. 
