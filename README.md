@@ -40,7 +40,7 @@ $PHP.interactive()
 $PHP.controller.worker.postMessage($input+"\r\n")
 ```
 
-### CGI mode
+### CGI
 
 ```4d
 $ini:=File("/RESOURCES/php/php.ini")
