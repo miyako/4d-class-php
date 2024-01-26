@@ -20,7 +20,7 @@ To effectively replace the CGI-based `PHP Execute`[^phpexecute] with `4D.SystemW
 
 For 1. and 3. you need to keep track of the single instance of `4D.SystemWoker` that is bound to the PHP interpreter.
 
-For 2. you need to implement a controller object and run your code in an execution context of a dialog or a worker. Ideally the controller would be a generic class that can be extended according to specific needs.
+For 2. you need to implement a controller object and run your code in an execution context of a dialog or a worker. Ideally the controller would be a generic class that can be easily extended according to specific needs.
 
 This project shares a set of classes to execute PHP from 4D by using an external interpeter and CGI (the `PHP Execute` command), interactive mode, or one-shot execute mode. 
 
