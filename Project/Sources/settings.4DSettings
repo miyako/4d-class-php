@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+	<com.4d>
+		<compiler>
+			<typage default_for_button="2" default_for_numeric="1"/>
+			<options syntax_file="true"/>
+		</compiler>
+		<interface>
+			<user sdi_application="true"/>
+		</interface>
+		<general component_classStore_name="PHP" startup_environnement="1"/>
+	</com.4d>
+</preferences>

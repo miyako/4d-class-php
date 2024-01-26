@@ -1,0 +1,44 @@
+{
+	"CGI": {
+		"classes": [
+			"_CGI",
+			"PHP_CGI"
+		]
+	},
+	"CLI": {
+		"classes": [
+			"_CLI",
+			"_PHP_CGI_CLI",
+			"PHP"
+		]
+	},
+	"Controller": {
+		"classes": [
+			"_CLI_Controller",
+			"_PHP_CGI_Controller",
+			"_PHP_Controller",
+			"_PHPUI_Controller"
+		]
+	},
+	"Demo": {
+		"methods": [
+			"TEST_CGI",
+			"TEST_Interactive",
+			"TEST_Run",
+			"TEST_Worker"
+		],
+		"forms": [
+			"PHP"
+		]
+	},
+	"View": {
+		"classes": [
+			"_Form",
+			"_PHPForm",
+			"CGI_PHPForm",
+			"Interactive_PHPForm",
+			"Run_PHPForm"
+		]
+	},
+	"trash": {}
+}

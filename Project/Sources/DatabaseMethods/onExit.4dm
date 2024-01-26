@@ -1,0 +1,1 @@
+cs:C1710.PHP_CGI.new(cs:C1710._PHP_CGI_Controller).terminate()

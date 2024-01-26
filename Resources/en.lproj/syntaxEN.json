@@ -1,0 +1,880 @@
+{
+	"_method_": {},
+	"cs.PHP": {
+		"CGI_PHPForm": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_PHP_CGI_CLI": {
+			"new()": {
+				"Syntax": "**.new**( *controller* : 4D.Class; *ini* : 4D.File )",
+				"Params": [
+					[
+						"controller",
+						"4D.Class",
+						"->"
+					],
+					[
+						"ini",
+						"4D.File",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_CLI_Controller": {
+			"new()": {
+				"Syntax": "**.new**( *CLI* : cs.PHP._CLI )",
+				"Params": [
+					[
+						"CLI",
+						"cs.PHP._CLI",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_PHP_Controller": {
+			"new()": {
+				"Syntax": "**.new**( *CLI* : cs.PHP._CLI )",
+				"Params": [
+					[
+						"CLI",
+						"cs.PHP._CLI",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_PHP_CGI_Controller": {
+			"new()": {
+				"Syntax": "**.new**( *CLI* : cs.PHP._CLI )",
+				"Params": [
+					[
+						"CLI",
+						"cs.PHP._CLI",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Run_PHPForm": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"PHP_CGI": {
+			"new()": {
+				"Syntax": "**.new**( *controller* : 4D.Class; *ini* : 4D.File )",
+				"Params": [
+					[
+						"controller",
+						"4D.Class",
+						"->"
+					],
+					[
+						"ini",
+						"4D.File",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_Form": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_CLI": {
+			"new()": {
+				"Syntax": "**.new**( *executableName* : Text; *controller* : 4D.Class )",
+				"Params": [
+					[
+						"executableName",
+						"Text",
+						"->"
+					],
+					[
+						"controller",
+						"4D.Class",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_PHPForm": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_PHPUI_Controller": {
+			"new()": {
+				"Syntax": "**.new**( *CLI* : cs.PHP._CLI )",
+				"Params": [
+					[
+						"CLI",
+						"cs.PHP._CLI",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"PHP": {
+			"new()": {
+				"Syntax": "**.new**( *controller* : 4D.Class; *ini* : 4D.File )",
+				"Params": [
+					[
+						"controller",
+						"4D.Class",
+						"->"
+					],
+					[
+						"ini",
+						"4D.File",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Interactive_PHPForm": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_CGI": {
+			"new()": {
+				"Syntax": "**.new**( *name* : Text )",
+				"Params": [
+					[
+						"name",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"CGI_PHPForm": {
+		"post()": {
+			"Syntax": "**.post**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onUnload()": {
+			"Syntax": "**.onUnload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_PHPForm"
+	},
+	"_PHP_CGI_CLI": {
+		"cgi()": {
+			"Syntax": "**.cgi**( *options* : Object )->this : cs.PHP._PHP_CGI_CLI",
+			"Params": [
+				[
+					"options",
+					"Object",
+					"->"
+				],
+				[
+					"this",
+					"cs.PHP._PHP_CGI_CLI",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CLI"
+	},
+	"_CLI_Controller": {
+		"get commands()": {
+			"Syntax": "**.get commands**()->commands : Collection",
+			"Params": [
+				[
+					"commands",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get complete()": {
+			"Syntax": "**.get complete**()->complete : Boolean",
+			"Params": [
+				[
+					"complete",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"terminate()": {
+			"Syntax": "**.terminate**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"execute()": {
+			"Syntax": "**.execute**( *command* : Variant )",
+			"Params": [
+				[
+					"command",
+					"Variant",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get worker()": {
+			"Syntax": "**.get worker**()->worker : 4D.SystemWorker",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get instance()": {
+			"Syntax": "**.get instance**()->instance : cs.PHP._CLI",
+			"Params": [
+				[
+					"instance",
+					"cs.PHP._CLI",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"_PHP_Controller": {
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onResponse()": {
+			"Syntax": "**.onResponse**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onDataError()": {
+			"Syntax": "**.onDataError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onData()": {
+			"Syntax": "**.onData**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CLI_Controller"
+	},
+	"_PHP_CGI_Controller": {
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onResponse()": {
+			"Syntax": "**.onResponse**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onDataError()": {
+			"Syntax": "**.onDataError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onData()": {
+			"Syntax": "**.onData**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CLI_Controller"
+	},
+	"Run_PHPForm": {
+		"post()": {
+			"Syntax": "**.post**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_PHPForm"
+	},
+	"PHP_CGI": {
+		"get FULL_PATH_TO_4D_Execute_PHP()": {
+			"Syntax": "**.get FULL_PATH_TO_4D_Execute_PHP**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"terminate()": {
+			"Syntax": "**.terminate**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"cgi()": {
+			"Syntax": "**.cgi**()->this : cs.PHP.PHP_CGI",
+			"Params": [
+				[
+					"this",
+					"cs.PHP.PHP_CGI",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get utilityFile()": {
+			"Syntax": "**.get utilityFile**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CGI"
+	},
+	"_Form": {
+		"onUnload()": {
+			"Syntax": "**.onUnload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		}
+	},
+	"_CLI": {
+		"quote()": {
+			"Syntax": "**.quote**( *in* : Text )->out : Text",
+			"Params": [
+				[
+					"in",
+					"Text",
+					"->"
+				],
+				[
+					"out",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"escape()": {
+			"Syntax": "**.escape**( *in* : Text )->out : Text",
+			"Params": [
+				[
+					"in",
+					"Text",
+					"->"
+				],
+				[
+					"out",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get controller()": {
+			"Syntax": "**.get controller**()->controller : cs.PHP._CLI_Controller",
+			"Params": [
+				[
+					"controller",
+					"cs.PHP._CLI_Controller",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get executablePath()": {
+			"Syntax": "**.get executablePath**()->executablePath : Text",
+			"Params": [
+				[
+					"executablePath",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"expand()": {
+			"Syntax": "**.expand**( *in* : Object )->out : Object",
+			"Params": [
+				[
+					"in",
+					"Object",
+					"->"
+				],
+				[
+					"out",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get currentDirectory()": {
+			"Syntax": "**.get currentDirectory**()->currentDirectory : 4D.Folder",
+			"Params": [
+				[
+					"currentDirectory",
+					"4D.Folder",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get name()": {
+			"Syntax": "**.get name**()->name : Text",
+			"Params": [
+				[
+					"name",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get executableFile()": {
+			"Syntax": "**.get executableFile**()->executableFile : 4D.File",
+			"Params": [
+				[
+					"executableFile",
+					"4D.File",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get platform()": {
+			"Syntax": "**.get platform**()->platform : Text",
+			"Params": [
+				[
+					"platform",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get EOL()": {
+			"Syntax": "**.get EOL**()->EOL : Text",
+			"Params": [
+				[
+					"EOL",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get executableName()": {
+			"Syntax": "**.get executableName**()->executableName : Text",
+			"Params": [
+				[
+					"executableName",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"_PHPForm": {
+		"push()": {
+			"Syntax": "**.push**( *line* : Text )",
+			"Params": [
+				[
+					"line",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"selectHistory()": {
+			"Syntax": "**.selectHistory**( *i* : Integer )",
+			"Params": [
+				[
+					"i",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"forward()": {
+			"Syntax": "**.forward**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"clearHistory()": {
+			"Syntax": "**.clearHistory**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"rewind()": {
+			"Syntax": "**.rewind**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"clearInput()": {
+			"Syntax": "**.clearInput**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"popupMenu()": {
+			"Syntax": "**.popupMenu**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"clearOutput()": {
+			"Syntax": "**.clearOutput**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_Form"
+	},
+	"_PHPUI_Controller": {
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onResponse()": {
+			"Syntax": "**.onResponse**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onDataError()": {
+			"Syntax": "**.onDataError**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onData()": {
+			"Syntax": "**.onData**( *worker* : 4D.SystemWorker; *params* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"params",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CLI_Controller"
+	},
+	"PHP": {
+		"run()": {
+			"Syntax": "**.run**( *php* : Variant )->this : cs.PHP.PHP",
+			"Params": [
+				[
+					"php",
+					"Variant",
+					"->"
+				],
+				[
+					"this",
+					"cs.PHP.PHP",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"interactive()": {
+			"Syntax": "**.interactive**()->this : cs.PHP.PHP",
+			"Params": [
+				[
+					"this",
+					"cs.PHP.PHP",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"terminate()": {
+			"Syntax": "**.terminate**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_CLI"
+	},
+	"Interactive_PHPForm": {
+		"post()": {
+			"Syntax": "**.post**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onUnload()": {
+			"Syntax": "**.onUnload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_PHPForm"
+	},
+	"_CGI": {
+		"stop()": {
+			"Syntax": "**.stop**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"expand()": {
+			"Syntax": "**.expand**( *in* : Object )->out : Object",
+			"Params": [
+				[
+					"in",
+					"Object",
+					"->"
+				],
+				[
+					"out",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"start()": {
+			"Syntax": "**.start**( *function* : 4D.Function )",
+			"Params": [
+				[
+					"function",
+					"4D.Function",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"quote()": {
+			"Syntax": "**.quote**( *in* : Text )->out : Text",
+			"Params": [
+				[
+					"in",
+					"Text",
+					"->"
+				],
+				[
+					"out",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get name()": {
+			"Syntax": "**.get name**()",
+			"Params": [],
+			"Summary": ""
+		}
+	}
+}
