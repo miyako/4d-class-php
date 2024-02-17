@@ -3,12 +3,11 @@
 [![license](https://img.shields.io/github/license/miyako/4d-class-php)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-class-php/total)
 
-# 4d-class-php
 [Classes](https://github.com/miyako/4d-class-php/tree/main/Project/Sources/Classes) to use external PHP interpreter in execute, interactive or CGI mode.
 
 ![](https://github.com/miyako/4d-class-php/assets/1725068/d470dc30-004f-4b8a-9812-32555bcd2a23)
 
-## Introduction
+# Introduction
 
 The internal PHP Interpreter has been removed in v20 R3[^removed]. Now it is "strongly advised" to use `4D.SystemWoker` to execute PHP code. 
 
@@ -24,7 +23,7 @@ For 2. you need to implement a controller object and run your code in an executi
 
 This project shares a set of classes to execute PHP from 4D by using an external interpeter and CGI (the `PHP Execute` command), interactive mode, or one-shot execute mode. 
 
-## Install
+# Install
 
 Get PHP from the offical site for Windows[^phpforwindows] or from my repository[^phpformac] for macOS. Alternatively, compile PHP from source. Place `php` and/or `php-cgi` at the following path:
 
@@ -32,9 +31,9 @@ Get PHP from the offical site for Windows[^phpforwindows] or from my repository[
 /RESOURCES/bin/{platform}/
 ```
 
-## Examples
+# Examples
 
-### Execute
+## Execute
 
 ```4d
 $ini:=File("/RESOURCES/php/php.ini")
@@ -44,7 +43,7 @@ $PHP.run($input)
 $stdOut:=$PHP.data
 ```
 
-### Interactive
+## Interactive
 
 ```4d
 $ini:=File("/RESOURCES/php/php.ini")
@@ -54,7 +53,7 @@ $PHP.interactive()
 $PHP.controller.worker.postMessage($input+"\r\n")
 ```
 
-### CGI
+## CGI
 
 ```4d
 $ini:=File("/RESOURCES/php/php.ini")
