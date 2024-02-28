@@ -5,7 +5,7 @@
 
 [Classes](https://github.com/miyako/4d-class-php/tree/main/Project/Sources/Classes) to use external PHP interpreter in execute, interactive or CGI mode.
 
-![](https://github.com/miyako/4d-class-php/assets/1725068/d470dc30-004f-4b8a-9812-32555bcd2a23)
+<img src="https://github.com/miyako/4d-class-php/assets/1725068/d470dc30-004f-4b8a-9812-32555bcd2a23" style="height:360px;width:auto;" />
 
 # Introduction
 
