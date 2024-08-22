@@ -12,7 +12,15 @@ Class constructor($controller : 4D:C1709.Class; $ini : 4D:C1709.File)
 		End if 
 	End if 
 	
-	This:C1470._utilityFile:=This:C1470.expand(File:C1566("/RESOURCES/php/_4D_Execute_PHP.php"))
+	var $temporaryFolder : 4D:C1709.Folder
+	$temporaryFolder:=Folder:C1567(Temporary folder:C486; fk platform path:K87:2).folder(Generate UUID:C1066)
+	$temporaryFolder.create()
+	
+	var $utilityFile : 4D:C1709.File
+	$utilityFile:=File:C1566("/RESOURCES/php/_4D_Execute_PHP.php")
+	$utilityFile:=This:C1470.expand($utilityFile.copyTo($temporaryFolder))
+	
+	This:C1470._utilityFile:=$utilityFile
 	
 Function get utilityFile()
 	
@@ -59,10 +67,10 @@ Function _cgi($class : 4D:C1709.Class; $ini : 4D:C1709.File)->$controller : cs:C
 	
 	$options.address:=(Get database parameter:C643(PHP interpreter IP address:K37:59; $stringValue)) && $stringValue
 	$options.port:=Get database parameter:C643(PHP interpreter port:K37:55)
-	$options.children:=Get database parameter:C643(_o_PHP number of children:K37:56)
-	$options.requests:=Get database parameter:C643(_o_PHP max requests:K37:57)
+	$options.children:=Get database parameter:C643(PHP number of children:K37:56)
+	$options.requests:=Get database parameter:C643(PHP max requests:K37:57)
 	
-	SET DATABASE PARAMETER:C642(_o_PHP use external interpreter:K37:58; 1)
+	SET DATABASE PARAMETER:C642(PHP use external interpreter:K37:58; 1)
 	
 	$controller:=cs:C1710._PHP_CGI_CLI.new($class; $ini).cgi($options)
 	

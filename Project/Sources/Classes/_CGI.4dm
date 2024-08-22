@@ -68,6 +68,6 @@ Function _stop($signal : 4D:C1709.Signal)
 		
 	End if 
 	
-	KILL WORKER:C1390
-	
 	$signal.trigger()
+	
+	KILL WORKER:C1390
